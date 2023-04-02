@@ -13,7 +13,7 @@ fi
 for file in "$input_folder"/*.*; do
   #* testing basename -- cleanExt=$(basename "$file" .jpeg)
   # Extract the name without the extension. Include extensions Upercase.
-  cleanExt=$(basename "$file" | sed -e "s/[A-Z]/\L&/g;s/\.jpeg$//;s/\.png$//;s/\.webp$//;s/\.apng$//;\
+  cleanExt=$(basename "$file" | sed -e "s/[A-Z]/\L&/g;s/\.jpeg$//;s/\.jpg$//;s/\.png$//;s/\.webp$//;s/\.apng$//;\
     s/\.ppm$//;s/\.pfm$//")
 
   # Show the name of file without extension.
