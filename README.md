@@ -13,10 +13,11 @@ JPEG XL binaries
 https://github.com/libjxl/libjxl/releases
 
 Example of use:
-First do `chmod +x ./jpgxl.sh`
-after open jpgxl.sh and **edit** to your preferences the options you need. 
-and last:
+First do `chmod +x ./jpgxl.sh`,
+then open jpgxl.sh and **edit** to your preferences the options you need `./cjxl -v -v --help` for full help options.
+
+And last:
 ```
 ./jpxl.sh
 ```
-Note for computers with 12GB RAM or less: Change --effort to 7 (default). And be carefull with images with resolution: 4500x8000 or more, because can use more of 14GB of RAM (in my experience. Probably because --effort it's 8)
+Note for computers with 12GB RAM or less to convert high resolution images: Be carefull with images with resolution: 4500x8000 or more, because can use more of 11GB of RAM (in my experience. Probably because --effort it's 8). Change --effort to 7 (default).
